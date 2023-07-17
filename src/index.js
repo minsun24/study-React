@@ -1,5 +1,6 @@
-import React from 'react';
+import React from 'react';   // jsx 문법 이용하기 위함
 import ReactDOM from 'react-dom/client';
+import {BrowserRouter} from 'react-router-dom'; //라우터 
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -7,7 +8,9 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App /> 
+    </BrowserRouter>
   </React.StrictMode>
 );
 
